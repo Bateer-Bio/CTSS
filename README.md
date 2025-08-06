@@ -20,6 +20,6 @@ cell_type_4 <- data.frame(sample = cell_type$SampleID, celltype = cell_type$cell
 **Input Requirements:​​**
 
 - **​​Expression Matrix​​:** A raw protein/gene expression matrix with features (genes/proteins) as rows and samples as columns (rownames should be gene/protein identifiers)
-- **​​Cell Type Metadata​​:** A data frame containing two required columns:
-- sample: Sample identifiers matching the column names of the expression matrix
-- celltype: Corresponding cell type classifications for each sample
+- **​​Cell Type Metadata​​:** A data frame containing two required columns:  
+sample: Sample identifiers matching the column names of the expression matrix  
+celltype: Corresponding cell type classifications for each sample  
