@@ -40,8 +40,21 @@ FJSD_cutoff  SC_mean
 ```
 FJSD_4_Cutoff$Plot
 ```
-[FJSD_Cutoff.pdf](https://github.com/user-attachments/files/21614331/FJSD_Cutoff.pdf)
-
+<img width="894" height="529" alt="截屏2025-08-06 16 45 27" src="https://github.com/user-attachments/assets/cdcc63a9-a655-48f6-87ed-7f92dbe81a40" />
+### 2.4 Volcano Plot Visualization for FJSD Results
+```
+FJSD_4_Top <- Top_FJSD(FJSD_4$FJSD_list, Top = Inf, FJSD_cutoff = FJSD_4_Cutoff$Optimal_FJSD$FJSD_cutoff, p_val_cutoff = 0.05, p_adj_cutoff = 0.05)
+FJSD_Epi <- FJSD_geom_point(FJSD_4$FJSD_list$Epithelial_cell, FJSD_Cutoff = FJSD_4_Cutoff$Optimal_FJSD$FJSD_cutoff, title = "Epithelial_cell Master TFs Analysis")
+FJSD_Epi
+```
+<img width="742" height="588" alt="截屏2025-08-06 16 46 31" src="https://github.com/user-attachments/assets/ded08614-89db-402a-bf01-cfc216676f2f" />
+### 2.5 Visualize Gene Expression Patterns Across Samples
+```
+FJSD_geom_line <- FJSD_geom_line(bulk_protein, FJSD_4_Top$Epithelial_cell$gene[1:5], 
+                                 cell_type = cell_type_4, title = "Gene Expression")
+FJSD_geom_line
+```
+<img width="1070" height="533" alt="截屏2025-08-06 16 46 00" src="https://github.com/user-attachments/assets/e9766e97-f60e-43be-b9af-9211730bcbb5" />
 
 
 
