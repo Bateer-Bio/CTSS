@@ -1,0 +1,21 @@
+Package: FJSD
+Title: FJSD: Fold Change and Jensen-Shannon Divergence for Identifying Master Transcription Factors with Specific and High Expression
+Version: 0.0.0.1
+Authors@R: 
+    person(given = "Teer",
+           family = "Ba",
+           role = c("aut", "cre"),
+           email = "32036005@mail.imu.edu.cn")
+Description: The FJSD (Fold Change and Jensen-Shannon Divergence) method is designed to identify master transcription factors (TFs) that are highly expressed and specific to different cell types in mouse lung data.
+License: Artistic-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.4.1)
+Imports: 
+    Matrix (>= 1.7-0),
+    dplyr (>= 1.1.4),
+    ggplot2 (>= 3.5.1),
+    ggrepel (>= 0.9.6),
+    tidyr (>= 1.3.1),
+    rlang (>= 1.1.4)
