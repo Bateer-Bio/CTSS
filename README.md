@@ -19,7 +19,41 @@ cell_type_4 <- data.frame(sample = cell_type$SampleID, celltype = cell_type$cell
 ```
 **Input Requirements:​​**
 
-- **​​Expression Matrix​​:** A raw protein/gene expression matrix with features (genes/proteins) as rows and samples as columns (rownames should be gene/protein identifiers)
+- **​​Expression Matrix​​:** A raw protein/gene expression matrix with features (genes/proteins) as rows and samples as columns 
 - **​​Cell Type Metadata​​:** A data frame containing two required columns:  
 sample: Sample identifiers matching the column names of the expression matrix  
 celltype: Corresponding cell type classifications for each sample  
+### 2.2 Calculates FJSD scores for all cell types (4 cell types)
+```
+FJSD_4 <- FJSD(bulk_protein, cell_type_4)
+```
+### 2.3 Calculates optimal FJSD score cutoff by maximizing cluster separation (measured by silhouette coefficient)
+```
+FJSD_4_Cutoff <- Optimal_FJSD_Cutoff(bulk_protein, cell_type_4, FJSD_4)
+```
+The optimal FJSD score cutoff of FJSD_4
+```
+FJSD_4_Cutoff$Optimal_FJSD
+FJSD_cutoff  SC_mean
+0.8          0.177725
+```
+```
+FJSD_4_Cutoff$Plot
+```
+[FJSD_Cutoff.pdf](https://github.com/user-attachments/files/21614331/FJSD_Cutoff.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
