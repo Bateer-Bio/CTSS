@@ -2,3 +2,4 @@
 ## 1.	Introduction to FJSD
 ### 1.1	Overview of FJSD
 The FJSD (Fold Change and Jensen-Shannon Divergence) method is designed to identify master transcription factors (TFs) that are highly expressed and specific to different cell types in mouse lung data. This method combines both the fold change (FC) and Jensen-Shannon divergence (JSD) scores to select TFs with high and specific expression levels.
+<img width="1974" height="929" alt="overview" src="https://github.com/user-attachments/assets/171b59f2-9e69-4958-b933-38acafcde8c1" />
