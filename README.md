@@ -2,7 +2,8 @@
 ## 1.	Introduction to CTSS
 ### 1.1	Overview of CTSS
 The CTSS (Cell-Type-Specific Score) method is designed to identify master transcription factors (TFs) that are highly expressed and specific to different cell types in mouse lung data. This method combines both the fold change (FC) and Jensen-Shannon divergence (JSD) scores to select TFs with high and specific expression levels.
-<img width="1974" height="929" alt="overview" src="https://github.com/user-attachments/assets/171b59f2-9e69-4958-b933-38acafcde8c1" />
+<img width="2031" height="801" alt="WechatIMG520" src="https://github.com/user-attachments/assets/54c37771-e526-4a5b-816e-51adfa420643" />
+
 
 ### 1.2 Installing R package
 ```
